@@ -34,7 +34,7 @@ return (
             href="#hero"
             >
                 <span className="relative z-10">
-                    <span className="text-glow text-foreground">Ian Corbett's</span> {""}
+                    <span className="text-glow text-foreground">Kyle Corbett's</span> {""}
                     Portfolio
                 </span>
             </a>
