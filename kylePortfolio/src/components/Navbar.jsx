@@ -16,7 +16,7 @@ export const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.screenY > 10);
+            setIsScrolled(window.scrollY > 10);
         };
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
@@ -30,12 +30,12 @@ return (
     )}
     >
         <div className="container flex items-center justify-between">
-            <a className="text-xl font-bold text-primary flex items-center"
+            <a className="text-xl font-bold text-blue-600 flex items-center"
             href="#hero"
             >
                 <span className="relative z-10">
-                    <span className="text-glow text-foreground">Kyle Corbett's</span> {""}
-                    Portfolio
+                    <span className="text-glow text-red-800 animate-fade-in-delay-1">Kyle Corbett's</span> {""}
+                    <span className="animate-fade-in-delay-3">Portfolio</span>
                 </span>
             </a>
 
