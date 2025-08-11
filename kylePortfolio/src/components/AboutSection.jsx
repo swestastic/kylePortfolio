@@ -63,10 +63,10 @@ export const About = () => {
 
               <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {[
-                  "React + Tailwind enjoyer (TypeScript friendly)",
-                  "Express / PostgreSQL on the backend",
-                  "Authentication, role-based access, and clean REST",
-                  "Data viz & dashboards with an eye for UX",
+                  "1",
+                  "2",
+                  "3",
+                  "4",
                 ].map((item, i) => (
                   <li
                     key={i}
