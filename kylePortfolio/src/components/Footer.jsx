@@ -1,15 +1,19 @@
-import { ArrowUp } from "lucide-react"
-
+import { cn } from "../lib/utils";
 
 export const Footer = () => {
-    return (
-        <footer className="py-12 px-4 bg-card relative border-t  mt-12 pt-8flex flex-wrap justify-between items-center">
-            <p className="text-sm text-muted-foreground">
-                &copy; {new Date().getFullYear()} Kyle Corbett Portfolio
-            </p>
-            <a href="#hero" className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors">
-                <ArrowUp size={20}/>
-            </a>
-        </footer>
-    )
+  return (
+    <footer className={cn("border-t border-border bg-background/80")}>
+      <div className="container py-2 flex flex-col md:flex-row items-center justify-between gap-1.5">
+        <p className="text-[11px] text-foreground/60">
+          © {new Date().getFullYear()} Kyle Corbett
+        </p>
+        <a
+          href="#hero"
+          className="text-[11px] text-foreground/60 hover:text-primary transition-colors"
+        >
+          Back to top
+        </a>
+      </div>
+    </footer>
+  );
 }
