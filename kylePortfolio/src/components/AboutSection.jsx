@@ -1,4 +1,4 @@
-import { Download, Github, MapPin, Briefcase, Code2, Cpu, Database, Boxes } from "lucide-react";
+import { Download, Github, MapPin, Briefcase, Code2, Cpu, Database, Boxes, Mail, Linkedin, Globe } from "lucide-react";
 import { cn } from "../lib/utils";
 import portrait from "../assets/Portrait.jpeg";
 
@@ -31,7 +31,7 @@ const SkillCategory = ({ icon: Icon, title, items }) => (
   </div>
 );
 
-/* --- component --- */
+
 export const About = () => {
   return (
     <section id="about" className={cn("relative py-20 md:py-28 bg-background text-foreground")}>
@@ -89,14 +89,7 @@ export const About = () => {
                 >
                   <Download className="size-4" /> Resume
                 </a>
-                <a
-                  href="https://github.com/swestastic"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl border border-border px-4 py-2 hover:bg-background/80"
-                >
-                  <Github className="size-4" /> GitHub
-                </a>
+                
               </div>
             </div>
 
@@ -126,6 +119,26 @@ export const About = () => {
                     { name: "Category4", level: 3 },
                   ]}
                 />
+                <SkillCategory
+                  icon={Code2}
+                  title="Physics"
+                  items={[
+                    { name: "Python", level: 4 },
+                    { name: "Julia", level: 5 },
+                    { name: "JavaScript", level: 4 },
+                    { name: "SQL", level: 3 },
+                  ]}
+                />
+                <SkillCategory
+                  icon={Code2}
+                  title="Other"
+                  items={[
+                    { name: "Python", level: 4 },
+                    { name: "Julia", level: 5 },
+                    { name: "JavaScript", level: 4 },
+                    { name: "SQL", level: 3 },
+                  ]}
+                />
               </div>
 
               <div className="mt-auto" />
@@ -146,7 +159,46 @@ export const About = () => {
                   <Briefcase className="size-4" /> Open to full-time positions
                 </div>
 
-                <div className="mt-auto" />
+                <div className="mt-auto pt-4 border-t border-border/60">
+  <h4 className="text-sm font-semibold text-foreground/80 mb-2">Contact</h4>
+
+  <div className="grid grid-cols-2 gap-2">
+    <a
+      href="mailto:kyle@example.com"
+      className="inline-flex items-center gap-2 rounded-lg border border-border px-3 py-2 hover:bg-background/80"
+      aria-label="Email"
+    >
+      <Mail className="size-4" /> Email
+    </a>
+    <a
+      href="https://www.linkedin.com/in/your-handle"
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex items-center gap-2 rounded-lg border border-border px-3 py-2 hover:bg-background/80"
+      aria-label="LinkedIn"
+    >
+      <Linkedin className="size-4" /> LinkedIn
+    </a>
+    <a
+      href="https://github.com/swestastic"
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex items-center gap-2 rounded-lg border border-border px-3 py-2 hover:bg-background/80"
+      aria-label="GitHub"
+    >
+      <Github className="size-4" /> GitHub
+    </a>
+    <a
+      href="https://kylecorbett.dev"
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex items-center gap-2 rounded-lg border border-border px-3 py-2 hover:bg-background/80"
+      aria-label="Website"
+    >
+      <Globe className="size-4" /> Website
+    </a>
+  </div>
+</div>
               </div>
             </div>
           </aside>
