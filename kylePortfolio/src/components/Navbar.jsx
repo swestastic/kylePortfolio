@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 import { cn } from "../lib/utils";
 import { Menu, X } from "lucide-react";
 
-const navItems = [
-    {name: "Home", href: "#"},
-    {name: "About", href: "#about"},
-    {name: "Skills", href: "#skills"},
-    {name: "My Work", href: "#mywork"},
-    {name: "Contact", href: "#contact"},
-];
+// const navItems = [
+//     {name: "Home", href: "/"},
+//     {name: "About", href: "about"},
+//     {name: "Skills", href: "skills"},
+//     {name: "My Work", href: "#projects"},
+//     {name: "Contact", href: "contact"},
+// ];
 
 export const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -31,7 +31,7 @@ return (
     >
         <div className="container flex items-center justify-between">
             <a className="text-xl font-bold text-blue-600 flex items-center"
-            href="#"
+            href="/"
             >
                 <span className="relative z-10">
                     <span className="text-glow text-red-800 animate-fade-in-delay-1">Kyle Corbett's</span> {""}
@@ -40,7 +40,7 @@ return (
             </a>
 
             {/*desktop nav*/}
-            <div className="hidden md:flex space-x-8">
+            {/* <div className="hidden md:flex space-x-8">
                 {navItems.map((item, key) => (
                     <a 
                     href={item.href} 
@@ -50,10 +50,10 @@ return (
                         {item.name}
                     </a>
                 ))}
-            </div>
+            </div> */}
 
                 {/*mobile nav*/}
-
+{/* 
                 <button onClick={() => setIsMenuOpen((prev) => !prev)}
                     className="md:hidden p-2 text-foreground z-50"
                     aria-label={isMenuOpen ? "Close  Menu" : "Open Menu"}
@@ -77,8 +77,8 @@ return (
                         {item.name}
                     </a>
                 ))}
-            </div>
-        </div>
+            </div> */}
+        {/* </div> */}
         </div>
         
     </nav>
