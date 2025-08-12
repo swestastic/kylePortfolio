@@ -171,7 +171,7 @@ export const About = () => {
       <Mail className="size-4" /> Email
     </a>
     <a
-      href="https://www.linkedin.com/in/your-handle"
+      href="https://www.linkedin.com/in/kyleccorbett/"
       target="_blank"
       rel="noreferrer"
       className="inline-flex items-center gap-2 rounded-lg border border-border px-3 py-2 hover:bg-background/80"
