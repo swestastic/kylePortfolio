@@ -1,0 +1,98 @@
+import { Github, ExternalLink } from "lucide-react";
+import { cn } from "../lib/utils";
+import screenshot from "../assets/ProjectPic.png"; 
+
+const featuredProject = {
+  title: "Ising_Gui",
+  period: "2025 • In progress",
+  description:
+    "A simple Ising Model app writing in Python using PIL, Tkinter, Numba, and Numpy. Arrays and math are handled with Numpy, which is then provided a significant speedup by Numba. Tkinter creates a popup window in which the simulation runs in with sliders and buttons, and PIL creates the images displayed of the simulation.",
+  tags: ["Python", "PIL", "Tkinter", "Numba", "Numpy"],
+  demoUrl: "#", 
+  githubUrl: "https://github.com/swestastic/edify", 
+};
+
+export default function MyWorkSection() {
+  const p = featuredProject;
+
+  return (
+    <section id="projects" className={cn("relative py-2 md:py-2 bg-background text-foreground")}>
+      <div className="container">
+        {/* Header */}
+        <div className="mx-auto max-w-3xl text-center mb-10 md:mb-12 animate-[var(--animate-fade-in)]">
+          {/* <div className="inline-flex items-center gap-2 rounded-full border border-border/60 px-3 py-1 text-xs md:text-sm text-foreground/70">
+            <span className="size-1.5 rounded-full bg-primary/70" />
+            My Work
+          </div> */}
+          <h2 className="mt-4 text-2xl md:text-3xl font-bold tracking-tight">Most recent project</h2>
+          <p className="mt-3 text-foreground/70">A quick look at what I've been building lately.</p>
+        </div>
+
+        {/* Featured card */}
+        <article className="rounded-2xl bg-card/70 border border-border shadow-sm overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            {/* Image side */}
+            <div className="relative">
+              <div className="gradient-border p-[1px] h-full md:rounded-l-2xl">
+                <div className="h-full w-full bg-card/80 md:rounded-l-2xl overflow-hidden">
+                  <img
+                    src={screenshot}
+                    alt={`${p.title} screenshot`}
+                    loading="lazy"
+                    className="w-full h-full object-cover md:aspect-[16/11] transition-transform duration-300 hover:scale-[1.02]"
+                  />
+                </div>
+              </div>
+              <span className="absolute top-3 left-3 inline-flex items-center gap-2 rounded-full bg-background/80 backdrop-blur px-3 py-1 text-xs border border-border/60">
+                <span className="size-1.5 rounded-full bg-primary" />
+                {p.period}
+              </span>
+            </div>
+
+            {/* Content side */}
+            <div className="p-6 md:p-8 flex flex-col justify-center animate-[var(--animate-fade-in-delay-1)]">
+              <h3 className="text-xl md:text-2xl font-semibold">{p.title}</h3>
+              <p className="mt-3 text-foreground/70 leading-relaxed">{p.description}</p>
+
+              <div className="mt-4 flex flex-wrap gap-2">
+                {p.tags.map((t) => (
+                  <span
+                    key={t}
+                    className="text-xs md:text-sm rounded-full border border-border/60 bg-background/60 px-3 py-1 text-foreground/80"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+
+              <div className="mt-6 flex flex-wrap gap-3">
+                {p.demoUrl && p.demoUrl !== "#" && (
+                  <a
+                    href={p.demoUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 rounded-xl bg-primary text-primary-foreground px-4 py-2 transition-transform duration-200 hover:scale-[1.02]"
+                  >
+                    <ExternalLink className="size-4" />
+                    Live Demo
+                  </a>
+                )}
+                {p.githubUrl && (
+                  <a
+                    href={p.githubUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 rounded-xl border border-border px-4 py-2 hover:bg-background/80"
+                  >
+                    <Github className="size-4" />
+                    GitHub
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  );
+}
