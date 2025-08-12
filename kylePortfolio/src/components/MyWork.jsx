@@ -1,6 +1,10 @@
 import { Github, ExternalLink } from "lucide-react";
 import { cn } from "../lib/utils";
 import screenshot from "../assets/ProjectPic.png"; 
+import Project1 from "@/assets/Project1.png";
+import Project2 from "@/assets/Project2.png";
+import Project3 from "@/assets/Project3.png";
+
 
 const featuredProject = {
   title: "Ising_Gui",
