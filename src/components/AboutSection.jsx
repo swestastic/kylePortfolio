@@ -64,10 +64,10 @@ export const About = () => {
 
               <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {[
-                  "1",
-                  "2",
-                  "3",
-                  "4",
+                  "Python",
+                  "Julia",
+                  "SolidWorks",
+                  "Condensed Matter Physics",
                 ].map((item, i) => (
                   <li
                     key={i}
@@ -107,39 +107,38 @@ export const About = () => {
                   title="Software"
                   items={[
                     { name: "Python", level: 4 },
-                    { name: "Julia", level: 5 },
-                    { name: "JavaScript", level: 4 },
-                    { name: "SQL", level: 3 },
+                    { name: "Julia", level: 4 },
+                    { name: "SolidWorks", level: 4 },
+                    { name: "Bash", level: 3 },
                   ]}
                 />
                 <SkillCategory
                   icon={Boxes}
                   title="Hardware"
                   items={[
-                    { name: "Category1", level: 5 },
-                    { name: "Category2", level: 4 },
-                    { name: "Category3", level: 3 },
-                    { name: "Category4", level: 3 },
+                    { name: "Raspberry Pi", level: 5 },
+                    { name: "Arduino", level: 3 },
+                    { name: "Automotive Mechanical", level: 5 },
+                    { name: "3D Printing", level: 5 },
                   ]}
                 />
                 <SkillCategory
                   icon={Code2}
                   title="Physics"
                   items={[
-                    { name: "Python", level: 4 },
-                    { name: "Julia", level: 5 },
-                    { name: "JavaScript", level: 4 },
-                    { name: "SQL", level: 3 },
+                    { name: "Condensed Matter", level: 5 },
+                    { name: "Quantum Theory", level: 4 },
+                    { name: "Statistical Mechanics", level: 4 },
+                    { name: "Mechanical Systems", level: 4 },
                   ]}
                 />
                 <SkillCategory
                   icon={Code2}
                   title="Other"
                   items={[
-                    { name: "Python", level: 4 },
+                    { name: "Team Work", level: 5 },
                     { name: "Julia", level: 5 },
                     { name: "JavaScript", level: 4 },
-                    { name: "SQL", level: 3 },
                   ]}
                 />
               </div>
