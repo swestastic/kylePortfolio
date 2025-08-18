@@ -31,7 +31,7 @@ return (
     >
         <div className="container flex items-center justify-between">
             <a className="text-xl font-bold text-blue-600 flex items-center"
-            href="/"
+            href="https://swestastic.github.io/kylePortfolio/"
             >
                 <span className="relative z-10">
                     <span className="text-glow text-red-800 animate-fade-in-delay-1">Kyle Corbett's</span> {""}
