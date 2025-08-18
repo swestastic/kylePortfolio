@@ -82,7 +82,7 @@ export const About = () => {
               {/* CTAs */}
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <a
-                  href="/Kyle%20Corbett%20Resume%202025.pdf"
+                  href="/kylePortfolio/Kyle%20Corbett%20Resume%202025.pdf"
                   className={cn(
                     "inline-flex items-center gap-2 rounded-xl border border-border px-4 py-2",
                     "bg-background/60 hover:bg-background/80 transition-colors"
