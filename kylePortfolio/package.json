@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://iancorbett.github.io/kylePortfolio/",
+  "homepage": "https://swestastic.github.io/kylePortfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
