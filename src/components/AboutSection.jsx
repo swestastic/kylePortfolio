@@ -165,7 +165,7 @@ export const About = () => {
 
   <div className="grid grid-cols-2 gap-2">
     <a
-      href="mailto:kyle@example.com"
+      href="mailto:kylecorbet@gmail.com"
       className="inline-flex items-center gap-2 rounded-lg border border-border px-3 py-2 hover:bg-background/80"
       aria-label="Email"
     >
@@ -190,11 +190,11 @@ export const About = () => {
       <Github className="size-4" /> GitHub
     </a>
     <a
-      href="https://kylecorbett.dev"
+      href="https://yayracing.com"
       target="_blank"
       rel="noreferrer"
       className="inline-flex items-center gap-2 rounded-lg border border-border px-3 py-2 hover:bg-background/80"
-      aria-label="Website"
+      aria-label="SolidWorks Portfolio"
     >
       <Globe className="size-4" /> Website
     </a>
