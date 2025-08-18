@@ -55,10 +55,11 @@ export const About = () => {
             <div className="rounded-2xl bg-card/70 border border-border p-6 md:p-8 text-left shadow-sm">
               <h3 className="text-xl md:text-2xl font-semibold">A little about me</h3>
               <p className="mt-3 text-foreground/70">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi at tristique feugiat,
-                augue lorem luctus odio, eget volutpat nunc lorem id magna. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Donec euismod, nisi at tristique feugiat, augue lorem luctus odio, eget volutpat nunc
-                lorem id magna.
+                My name is Kyle Corbett. I'm a recent graduate with a Master of Science in Physics from San Jose State University.
+                I have a strong background in computational physics, with experience in developing simulations and models using Python and Julia.
+                I have 8 years of working on automotive related projects, with 5 years SolidWorks experience as well.
+                Outside of academics, I am passionate about cars and golf, and I enjoy working on personal projects that combine these interests.
+                Currently looking for roles where I can apply my skills!
               </p>
 
               <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3">
