@@ -18,35 +18,27 @@ export const Simulations = () => {
           <section className="border rounded-lg p-6">
             <h2 className="text-xl font-semibold mb-2">Ising Model</h2>
             <p className="text-foreground/70 mb-4">
-                Simulation codes for the 2D Ising model using the 
+                Simulation codes and visualizations for the 2D Ising model using the
                 Metropolis, Glauber, Heatbath, Wolff, Swendsen-Wang, Worm, and Kawasaki algorithms.
-                <br />
-                Python code is available as a Jupyter Notebook, in addition to a Tkinter GUI application.
-                <br />
-                Rust code is available as a compiled Web Assembly app.
             </p>
             <div className="flex flex-wrap gap-2">
               {/* Replace '#' with actual links */}
-              <a href="#" className={btn} target="_blank" rel="noopener noreferrer">Python Notebook</a>
-              <a href="#" className={btn} target="_blank" rel="noopener noreferrer">Python GUI</a>
-              <a href="#" className={btn} target="_blank" rel="noopener noreferrer">Rust WASM App</a>
+              <a href="https://github.com/swestastic/Ising_Model" className={btn} target="_blank" rel="noopener noreferrer">Python Notebook</a>
+              <a href="https://github.com/swestastic/Ising_GUI" className={btn} target="_blank" rel="noopener noreferrer">Python GUI</a>
+              <a href="https://swestastic.github.io/Ising_Rust/" className={btn} target="_blank" rel="noopener noreferrer">Rust WASM App</a>
             </div>
           </section>
 
           <section className="border rounded-lg p-6">
             <h2 className="text-xl font-semibold mb-2">XY Model</h2>
             <p className="text-foreground/70 mb-4">
-              Simulation codes for the 2D XY model using the
-              Metropolis, Glauber, Heatbath, Wolff, Swendsen-Wang, Worm, and Kawasaki algorithms.
-              <br />
-              Python code is available as a Jupyter Notebook, in addition to a Tkinter GUI application.
-              <br />
-              Rust code is available as a compiled Web Assembly app.
+              Simulation codes and visualizations for the 2D XY model using the
+              Metropolis, Wolff, Worm, and Overrelaxation algorithms.
             </p>
             <div className="flex flex-wrap gap-2">
-              <a href="#" className={btn} target="_blank" rel="noopener noreferrer">Python Notebook</a>
-              <a href="#" className={btn} target="_blank" rel="noopener noreferrer">Python GUI</a>
-              <a href="#" className={btn} target="_blank" rel="noopener noreferrer">Rust WASM App</a>
+              {/* <a href="https://github.com/swestastic/XY-Model" className={btn} target="_blank" rel="noopener noreferrer">Python Notebook</a> */}
+              <a href="https://github.com/swestastic/XY_GUI" className={btn} target="_blank" rel="noopener noreferrer">Python GUI</a>
+              <a href="https://swestastic.github.io/XY_Rust/" className={btn} target="_blank" rel="noopener noreferrer">Rust WASM App</a>
             </div>
           </section>
         </div>
@@ -57,18 +49,13 @@ export const Simulations = () => {
           <section className="border rounded-lg p-6">
             <h2 className="text-xl font-semibold mb-2">Fermi-Hubbard Model</h2>
             <p className="text-foreground/70 mb-4">
-                Simulation codes for the Fermi-Hubbard model on the 1D chain, 2D square, and 2D Kagome lattices.
-                <br />
-                For the 1D chain implementation, Python code is available as a Jupyter Notebook 
-                and Julia code is available as a script using the SmoQyDQMC.jl package.
-                <br />
-                For the 2D square and Kagome lattice implementations, Julia code is available as a script using the SmoQyDQMC.jl package.
+                Simulation codes for the Fermi-Hubbard model on the 1D chain, 2D square, and 2D Kagome lattices
+                using the determinant quantum Monte Carlo method. 1D chain is implemented by hand in Python, and others use SmoQyDQMC.jl.
             </p>
             <div className="flex flex-wrap gap-2">
-              <a href="#" className={btn} target="_blank" rel="noopener noreferrer">1D Python Notebook</a>
-              <a href="#" className={btn} target="_blank" rel="noopener noreferrer">1D Julia Script</a>
-              <a href="#" className={btn} target="_blank" rel="noopener noreferrer">2D Square Julia</a>
-              <a href="#" className={btn} target="_blank" rel="noopener noreferrer">2D Kagome Julia</a>
+              <a href="https://github.com/swestastic/Hubbard_1D" className={btn} target="_blank" rel="noopener noreferrer">1D Chain</a>
+              {/* <a href="https://github.com/swestastic/Hubbard_2D" className={btn} target="_blank" rel="noopener noreferrer">2D Square Julia</a>
+              <a href="https://github.com/swestastic/Hubbard_Kagome" className={btn} target="_blank" rel="noopener noreferrer">2D Kagome Julia</a> */}
             </div>
           </section>
         </div>
@@ -83,7 +70,7 @@ export const Simulations = () => {
               Ideal for running large parameter sweeps or long simulations where frequent disk writes are unnecessary.
             </p>
             <div className="flex flex-wrap gap-2">
-              <a href="#" className={btn} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+              <a href="https://github.com/swestastic/SmoQyDQMC.jl" className={btn} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
             </div>
           </section>
 
@@ -96,7 +83,7 @@ export const Simulations = () => {
                 and save finalized results for easy lookup and plotting.
             </p>
             <div className="flex flex-wrap gap-2">
-              <a href="#" className={btn} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+              <a href="https://github.com/swestastic/SmoQy_Saver" className={btn} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
             </div>
           </section>
         </div>
