@@ -23,6 +23,7 @@ export const Navbar = () => {
 }, []);
 
 return (
+    <>
     <nav 
     className={cn(
         "fixed w-full z-40 transition-all duration-300 border-b", 
@@ -38,6 +39,21 @@ return (
                     <span className="animate-fade-in-delay-3">Portfolio</span>
                 </span>
             </a>
+
+            <div className="flex items-center gap-8">
+              <a
+                href="#/"
+                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+              >
+                Home
+              </a>
+              <a
+                href="#/simulations"
+                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+              >
+                Simulations
+              </a>
+            </div>
 
             {/*desktop nav*/}
             {/* <div className="hidden md:flex space-x-8">
@@ -82,5 +98,8 @@ return (
         </div>
         
     </nav>
+    {/* Spacer to offset the fixed navbar height */}
+    <div className="h-20 md:h-16" aria-hidden="true" />
+    </>
     );
 }

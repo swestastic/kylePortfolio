@@ -109,7 +109,7 @@ export const About = () => {
                     { name: "Python", level: 4 },
                     { name: "Julia", level: 4 },
                     { name: "SolidWorks", level: 4 },
-                    { name: "Bash", level: 3 },
+                    { name: "Rust", level: 3 },
                   ]}
                 />
                 <SkillCategory
@@ -137,8 +137,8 @@ export const About = () => {
                   title="Other"
                   items={[
                     { name: "Team Work", level: 5 },
-                    { name: "Julia", level: 5 },
-                    { name: "JavaScript", level: 4 },
+                    { name: "Communication", level: 5 },
+                    { name: "Teaching", level: 5 },
                   ]}
                 />
               </div>
