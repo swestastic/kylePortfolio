@@ -27,7 +27,7 @@ export const Simulations = () => {
               <a href="https://github.com/swestastic/Ising_Model" className={btn} target="_blank" rel="noopener noreferrer">Python MC Notebook</a>
               <a href="https://github.com/swestastic/Ising_GUI" className={btn} target="_blank" rel="noopener noreferrer">Python MC GUI</a>
               <a href="https://swestastic.github.io/Ising_Rust/" className={btn} target="_blank" rel="noopener noreferrer">Rust MC WASM App</a>
-              <a href="https://swestastic.github.io/Ising_NLCE/" className={btn} target="_blank" rel="noopener noreferrer">Python NLCE Notebook</a>
+              <a href="https://github.com/swestastic/Ising_NLCE/" className={btn} target="_blank" rel="noopener noreferrer">Python NLCE Notebook</a>
             </div>
           </section>
 
