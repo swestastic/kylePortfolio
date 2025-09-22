@@ -53,6 +53,12 @@ return (
               >
                 Simulations
               </a>
+              <a
+                href="#/automotive"
+                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+              >
+                Automotive
+              </a>
             </div>
 
             {/*desktop nav*/}

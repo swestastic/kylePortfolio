@@ -19,13 +19,15 @@ export const Simulations = () => {
             <h2 className="text-xl font-semibold mb-2">Ising Model</h2>
             <p className="text-foreground/70 mb-4">
                 Simulation codes and visualizations for the 2D Ising model using the
-                Metropolis, Glauber, Heatbath, Wolff, Swendsen-Wang, Worm, and Kawasaki algorithms.
+                Metropolis, Glauber, Heatbath, Wolff, Swendsen-Wang, Worm, and Kawasaki Monte Carlo algorithms,
+                and a numerical linked-cluster expansion method.
             </p>
             <div className="flex flex-wrap gap-2">
               {/* Replace '#' with actual links */}
-              <a href="https://github.com/swestastic/Ising_Model" className={btn} target="_blank" rel="noopener noreferrer">Python Notebook</a>
-              <a href="https://github.com/swestastic/Ising_GUI" className={btn} target="_blank" rel="noopener noreferrer">Python GUI</a>
-              <a href="https://swestastic.github.io/Ising_Rust/" className={btn} target="_blank" rel="noopener noreferrer">Rust WASM App</a>
+              <a href="https://github.com/swestastic/Ising_Model" className={btn} target="_blank" rel="noopener noreferrer">Python MC Notebook</a>
+              <a href="https://github.com/swestastic/Ising_GUI" className={btn} target="_blank" rel="noopener noreferrer">Python MC GUI</a>
+              <a href="https://swestastic.github.io/Ising_Rust/" className={btn} target="_blank" rel="noopener noreferrer">Rust MC WASM App</a>
+              <a href="https://swestastic.github.io/Ising_NLCE/" className={btn} target="_blank" rel="noopener noreferrer">Python NLCE Notebook</a>
             </div>
           </section>
 
