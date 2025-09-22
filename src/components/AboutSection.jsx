@@ -43,7 +43,7 @@ export const About = () => {
           </h2>
           <p className="mt-4 text-foreground/70 leading-relaxed">
             Recent graduate with an M.S. in physics, adept at using various programming languages such as Python and
-            Julia to build simulations.
+            Julia to build simulations and models. Experienced in SolidWorks with a strong background in automotive projects.
           </p>
         </div>
 
@@ -58,7 +58,7 @@ export const About = () => {
                 My name is Kyle Corbett. I'm a recent graduate with a Master of Science in Physics from San Jose State University.
                 I have a strong background in computational physics, with experience in developing simulations and models using Python and Julia.
                 I have 8 years of working on automotive related projects, with 5 years SolidWorks experience as well.
-                Outside of academics, I am passionate about cars and golf, and I enjoy working on personal projects that combine these interests.
+                Outside of academics, I am passionate about cars and drifting, golf, and coffee and I enjoy working on personal projects that combine these interests.
                 Currently looking for roles where I can apply my skills!
               </p>
 
