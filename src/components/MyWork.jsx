@@ -25,7 +25,7 @@ const featuredProject = {
   ),
   tags: ["Rust", "WebAssembly", "JavaScript", "HTML", "CSS"],
   demoUrl: "https://swestastic.github.io/Ising_Rust/", 
-  // githubUrl: "#", 
+  githubUrl: "https://github.com/swestastic/Ising_Rust", 
 };
 
 const projects = [
@@ -57,7 +57,7 @@ const projects = [
     image: Project1,
     tags: ["Rust", "WebAssembly", "JavaScript", "HTML", "CSS"],
     demoUrl: "https://swestastic.github.io/XY_Rust/",
-    // githubUrl: "https://github.com/swestastic/XY_GUI",
+    githubUrl: "https://github.com/swestastic/XY_Rust",
   },
   {
     title: "PiConsult",
