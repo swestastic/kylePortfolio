@@ -19,7 +19,7 @@ const automotiveProjects = [
 		description:
 			"I purchased this 1990 Nissan 300ZX 2+2 in January of 2020. It was crashed badly by the previous owner, and destined as a parts car for my other 1996 300ZX, but I decided to restore it. Powered by a naturally aspirated VG30DE engine, this car has served me well as a daily driver, drift car, and project car.",
 		tags: [],
-		// learnMoreUrl: "#", // Add your 300ZX project URL here
+		learnMoreUrl: "#/z32",
 		image: Z32Pic, // Add your 300ZX image here
 		// githubUrl: "https://github.com/swestastic/PiConsult",
 		// Add more automotive projects here
@@ -29,7 +29,7 @@ const automotiveProjects = [
 		description:
 			"I traded my 1996 300ZX for this 1986 Toyota Corolla AE86 in August of 2021. When I got this car it was in rough shape and powered by a 4AC engine. Later it received a 16v 4AGE engine swap, and now it has a notchtop SR20DE engine swap from a Nissan Silvia S15.",
 		tags: [],
-		// learnMoreUrl: "#", // Add your AE86 project URL here
+		learnMoreUrl: "#/ae86",
 		image: AE86Pic, // Add your AE86 image here
 		// Add githubUrl if you have related projects
 		// githubUrl: "https://github.com/swestastic/ae86-project",
@@ -99,8 +99,7 @@ export default function AutomotiveSection() {
 									{project.learnMoreUrl && (
 										<a
 											href={project.learnMoreUrl}
-											target="_blank"
-											rel="noreferrer"
+											{...(project.learnMoreUrl.startsWith('#') ? {} : { target: '_blank', rel: 'noreferrer' })}
 											className="inline-flex items-center gap-2 rounded-xl bg-primary text-primary-foreground px-4 py-2 transition-transform duration-200 hover:scale-[1.02]"
 										>
 											<ExternalLink className="size-4" />
