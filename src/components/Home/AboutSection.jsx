@@ -1,6 +1,6 @@
 import { Download, Github, MapPin, Briefcase, Code2, Boxes, Mail, Linkedin, Globe } from "lucide-react";
-import { cn } from "../lib/utils";
-import portrait from "../assets/Portrait.jpeg";
+import { cn } from "../../lib/utils";
+import portrait from "../../assets/Portrait.jpeg";
 
 
 const MeterDots = ({ value = 0, outOf = 5 }) => (

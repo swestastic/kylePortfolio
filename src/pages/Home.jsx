@@ -1,8 +1,8 @@
-import { About } from "../components/AboutSection";
-import { Footer } from "../components/Footer";
-import MyWorkSection from "../components/MyWork";
+import { About } from "../components/Home/AboutSection";
+import { Footer } from "../components/Home/Footer";
+import MyWorkSection from "../components/Home/MyWork";
 
-import { Navbar } from "../components/Navbar";
+import { Navbar } from "../components/Home/Navbar";
 
 export const Home = () => {
     return (

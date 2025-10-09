@@ -3,7 +3,7 @@ import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
 import { Simulations } from "./pages/Simulations";
 import { Automotive } from "./pages/Automotive";
-import { Z32 } from "./pages/Z32";
+import Z32 from "./pages/Z32";
 import { AE86 } from "./pages/AE86";
 
 function App() {

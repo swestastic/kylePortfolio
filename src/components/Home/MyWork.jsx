@@ -1,6 +1,6 @@
 import { Github, ExternalLink, ArrowBigDown } from "lucide-react";
-import { cn } from "../lib/utils";
-import IsingWebappPic from "../assets/IsingWebappPicture.png"; 
+import { cn } from "../../lib/utils";
+import IsingWebappPic from "@/assets/IsingWebappPicture.png"; 
 import Project1 from "@/assets/XYWebappPicture.png";
 import Project2 from "@/assets/Project2.png";
 import Project3 from "@/assets/Project3.png";
