@@ -32,6 +32,16 @@ export function ClassicalSpinModels() {
 						<a href="https://swestastic.github.io/XY_Rust/" className={btn} target="_blank" rel="noopener noreferrer">Rust WASM App</a>
 					</div>
 				</section>
+
+				<section className="border rounded-lg p-6">
+					<h2 className="text-xl font-semibold mb-2">Standard Potts Model</h2>
+					<p className="text-foreground/70 mb-4">
+						Rust web application to simulate the 2D q-state Potts model using the Metropolis algorithm.
+					</p>
+					<div className="flex flex-wrap gap-2">
+						<a href="https://swestastic.github.io/Standard_Potts_Rust/" className={btn} target="_blank" rel="noopener noreferrer">Rust WASM App</a>
+					</div>
+				</section>
 			</div>
 		</>
 	);
