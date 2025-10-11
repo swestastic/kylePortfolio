@@ -17,7 +17,7 @@ export const Simulations = () => {
 
         <ClassicalSpinModels />
         <QuantumSpinModels />
-        {/* <QuantumComputing /> */}
+        <QuantumComputing />
         <Tools />
       </main>
       <Footer />
