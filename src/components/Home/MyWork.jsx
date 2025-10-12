@@ -1,7 +1,7 @@
 import { Github, ExternalLink, ArrowBigDown } from "lucide-react";
 import { cn } from "../../lib/utils";
-import IsingWebappPic from "@/assets/IsingWebappPicture.png"; 
-import Project1 from "@/assets/XYWebappPicture.png";
+import MostRecentProjectPic from "@/assets/IsingWebapp.gif"; 
+import Project1 from "@/assets/XYWebapp.gif";
 import Project2 from "@/assets/Project2.png";
 import Project3 from "@/assets/Project3.png";
 
@@ -120,7 +120,7 @@ export default function MyWorkSection() {
               <div className="gradient-border p-[1px] h-full md:rounded-l-2xl">
                 <div className="h-full w-full bg-card/80 md:rounded-l-2xl overflow-hidden">
                   <img
-                    src={IsingWebappPic}
+                    src={MostRecentProjectPic}
                     alt={`${p.title} IsingWebapp screenshot`}
                     loading="lazy"
                     className="w-full h-full object-cover md:aspect-[16/11] transition-transform duration-300 hover:scale-[1.02]"
