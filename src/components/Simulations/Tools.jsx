@@ -1,14 +1,15 @@
 const btn = "inline-flex items-center rounded-md border px-3 py-1.5 text-sm font-medium hover:bg-muted transition-colors";
 
 // Import images here when you add them
-// import SmoQyLessIOImage from "@/assets/simulations/smoqy-lessio.jpg";
-// import SmoQySaverImage from "@/assets/simulations/smoqy-saver.jpg";
+import SmoQyLessIOImage from "@/assets/Tools/SmoQyDQMC.png";
+import SmoQySaverImage from "@/assets/Tools/SmoQySaver.png";
+import LatticeBuilderImage from "@/assets/Tools/LatticeBuilder.png";
 
 const tools = [
 	{
 		title: "SmoQyDQMC.jl LessIO",
 		description: "Modified version of the SmoQyDQMC.jl package with reduced input/output overhead. Ideal for running large parameter sweeps or long simulations where frequent disk writes are unnecessary.",
-		// image: SmoQyLessIOImage, // Uncomment when you add the image
+		image: SmoQyLessIOImage,
 		links: [
 			{ label: "GitHub Repo", url: "https://github.com/swestastic/SmoQyDQMC.jl" },
 		],
@@ -16,9 +17,17 @@ const tools = [
 	{
 		title: "SmoQySaver",
 		description: "A lightweight Python utility for managing SmoQyDQMC outputs. Calculate the binned average and standard error of the mean for observables over multiple runs, and save finalized results for easy lookup and plotting.",
-		// image: SmoQySaverImage, // Uncomment when you add the image
+		image: SmoQySaverImage,
 		links: [
 			{ label: "GitHub Repo", url: "https://github.com/swestastic/SmoQy_Saver" },
+		],
+	},
+	{
+		title: "LatticeBuilder",
+		description: "A Rust WASM app for building and visualizing 2D lattices. Create various lattice structures and export them for use in simulations or educational purposes.",
+		image: LatticeBuilderImage,
+		links: [
+			{ label: "Rust WASM App", url: "https://swestastic.github.io/LatticeBuilder" },
 		],
 	},
 ];
