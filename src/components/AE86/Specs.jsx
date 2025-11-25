@@ -75,6 +75,15 @@ export function Specs() {
 						Back to Automotive
 					</a>
 				</div>
+
+				<div className="mt-3">
+					<a
+						href="#/ae86/writeups"
+						className="inline-block w-full text-center rounded-lg border border-border text-foreground px-4 py-2 hover:bg-background/80 transition-opacity"
+					>
+						AE86 Writeups
+					</a>
+				</div>
 			</div>
 		</aside>
 	);

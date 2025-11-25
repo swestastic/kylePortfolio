@@ -3,6 +3,7 @@ import { Footer } from "../components/Home/Footer";
 import { ClassicalSpinModels } from "../components/Simulations/ClassicalSpinModels";
 import { QuantumSpinModels } from "../components/Simulations/QuantumSpinModels";
 import { QuantumComputing } from "../components/Simulations/QuantumComputing";
+import { MachineLearning } from "../components/Simulations/MachineLearning";
 import { Tools } from "../components/Simulations/Tools";
 
 export const Simulations = () => {
@@ -16,6 +17,7 @@ export const Simulations = () => {
         </p>
 
         <ClassicalSpinModels />
+        <MachineLearning />
         <QuantumSpinModels />
         <QuantumComputing />
         <Tools />
