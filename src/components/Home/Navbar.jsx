@@ -44,18 +44,46 @@ return (
               <a
                 href="#/"
                 className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                onClick={(e) => {
+                  if (window.location.hash === '#/' || window.location.hash === '') {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }
+                }}
               >
                 Home
               </a>
               <a
-                href="#/simulations"
+                href="#/"
                 className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                onClick={(e) => {
+                  e.preventDefault();
+                  if (window.location.hash !== '#/' && window.location.hash !== '') {
+                    window.location.hash = '#/';
+                    setTimeout(() => {
+                      document.getElementById('physics')?.scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                  } else {
+                    document.getElementById('physics')?.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
               >
-                Simulations
+                Physics
               </a>
               <a
-                href="#/automotive"
+                href="#/"
                 className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                onClick={(e) => {
+                  e.preventDefault();
+                  if (window.location.hash !== '#/' && window.location.hash !== '') {
+                    window.location.hash = '#/';
+                    setTimeout(() => {
+                      document.getElementById('automotive')?.scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                  } else {
+                    document.getElementById('automotive')?.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
               >
                 Automotive
               </a>
